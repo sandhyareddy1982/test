@@ -14,7 +14,7 @@
 
     - name: copy index.html
       copy:
-        src: test/ansi/index.html
+        src: /index.html
         dest: /var/www/html
         remote_src: yes  
         
