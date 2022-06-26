@@ -7,11 +7,6 @@
         name: httpd
         state: present
 
-    - name: install apache
-      yum:
-        name: apache
-        state: present
-
     - name: restart 
       service:
         name: httpd
