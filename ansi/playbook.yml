@@ -1,0 +1,18 @@
+---
+- hosts: servers
+  become: true
+  tasks:
+    - name: install httpd
+      yum:
+        name: httpd
+        state: present
+
+    - name: install apache
+      yum:
+        name: apache
+        state: present
+
+    - name: restart 
+      service:
+        name: httpd
+        state: restarted      
